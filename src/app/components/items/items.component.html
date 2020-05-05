@@ -1,0 +1,6 @@
+<p *ngIf="!!selectedCategory.length">Comprar todos estos items para {{ category }}:</p>
+<div class="row text-center ml-3" *ngFor="items of selectedCategory; let i = index">
+    <div class="col-3 card p-3 m-3 m-3">
+        {{ selectedCategory[i].name }}
+    </div>
+</div>

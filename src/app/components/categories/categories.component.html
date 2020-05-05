@@ -1,0 +1,6 @@
+<p>Tipos de artículos que tengo que comprar:</p>
+<div class="row text-center ml-3" *ngFor="category of categories; let i = index">
+    <div class="col-3 card p-3 m-3 m-3" (click)="selectCategory(categories[i])">
+        {{ categories[i] }}
+    </div>
+</div>
